@@ -1,2 +1,2 @@
-# race_bar
+# Race Bar Graph
 Race Bar Graph

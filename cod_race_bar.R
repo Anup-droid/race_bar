@@ -13,7 +13,7 @@ GBDIND <- read_excel("C:/Users/Anup Kumar/Desktop/R-Code/Data_Visualization/GBDI
 cod_plot <- GBDIND %>%
   ggplot() +
   geom_col(aes(Rank, Death, fill = Disease)) +
-  geom_text(aes(Rank, Death, label = Death), hjust = -0.1) +
+  geom_text(aes(Rank, Death, label = round(Death,0), hjust = -0.1)) +
   geom_text(aes(Rank, y = 0 , label = Disease), hjust = 1.1) +
   geom_text(
     aes(
@@ -50,7 +50,7 @@ cod_anim=animate(
   width = 700,
   height = 432,
   fps = 15,
-  duration = 35,
+  duration = 2,
   rewind = FALSE
 )
 #To save the animation
